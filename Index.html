@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Developer | Hollywood Hacker Terminal</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #00ff00;
+      font-family: monospace;
+      padding: 20px;
+    }
+    .terminal {
+      border: 1px solid #00ff00;
+      padding: 20px;
+      background-color: #000;
+      min-height: 300px;
+    }
+    .command {
+      color: #00ff00;
+    }
+    .output {
+      color: #00ff00;
+    }
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      height: 20px;
+      background-color: #00ff00;
+      animation: blink 1s infinite;
+      vertical-align: bottom;
+    }
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="terminal">
+    <p class="command">developer@prompt-space:~$ sudo apt install hollywood</p>
+    <p class="output">Reading package lists... Done</p>
+    <p class="output">Building dependency tree</p>
+    <p class="output">Reading state information... Done</p>
+    <p class="output">The following NEW packages will be installed:</p>
+    <p class="output">  hollywood</p>
+    <p class="output">0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.</p>
+    <p class="output">Need to get 3,500 B of archives.</p>
+    <p class="output">After this operation, 25.6 kB of additional disk space will be used.</p>
+    <p class="command">Do you want to continue? [Y/n] <span class="cursor"></span></p>
+  </div>
+</body>
+</html>
